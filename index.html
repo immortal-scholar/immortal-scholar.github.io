@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Paul Wellington Harris - Online CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Online CV of Paul Wellington Harris, English Language Instructor and Linguistic Evaluator based in Japan." />
+  <style>
+    :root {
+      --bg: #f5f5f7;
+      --fg: #1f2933;
+      --accent: #2563eb;
+      --accent-soft: #e0ecff;
+      --muted: #6b7280;
+      --card: #ffffff;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+
+    header {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 24px 24px 20px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      border: 1px solid var(--border);
+      margin-bottom: 24px;
+    }
+
+    .name-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 8px 16px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      letter-spacing: 0.03em;
+      margin: 0;
+    }
+
+    .title {
+      font-size: 1rem;
+      color: var(--muted);
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .tagline {
+      margin-top: 14px;
+      font-size: 0.98rem;
+      color: var(--fg);
+    }
+
+    .badge-row {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .badge {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--accent-soft);
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 2.3fr) minmax(0, 1.3fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 800px) {
+      main {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    section {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 18px 20px 20px;
+      border: 1px solid var(--border);
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin: 0 0 12px;
+    }
+
+    .section-intro {
+      font-size: 0.95rem;
+      color: var(--fg);
+      margin-bottom: 8px;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .pill-list li {
+      font-size: 0.83rem;
+      padding: 4px 9px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: #fafafa;
+    }
+
+    .job {
+      margin-bottom: 12px;
+    }
+
+    .job:last-child {
+      margin-bottom: 0;
+    }
+
+    .job-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 4px 10px;
+      margin-bottom: 4px;
+    }
+
+    .job-title {
+      font-weight: 600;
+      font-size: 0.96rem;
+    }
+
+    .job-meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .job-bullets {
+      margin: 6px 0 0;
+      padding-left: 18px;
+      font-size: 0.92rem;
+    }
+
+    .job-bullets li {
+      margin-bottom: 3px;
+    }
+
+    .edu-entry {
+      margin-bottom: 8px;
+      font-size: 0.94rem;
+    }
+
+    .edu-entry strong {
+      display: block;
+    }
+
+    .small {
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    .subheading {
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin: 10px 0 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+<header>
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+    
+    <!-- LEFT SIDE: NAME + CONTACT -->
+    <div style="flex: 1 1 500px; min-width: 280px;">
+      <div class="name-row">
+        <h1>Paul Wellington Harris, Jr.</h1>
+        <span class="title">English Language Instructor & Linguistic Evaluator</span>
+      </div>
+
+      <div class="contact">
+        <span>Ueda City, Nagano, Japan</span>
+        <span>Tel: <a href="tel:+819058111201">090-5811-1201</a></span>
+        <span>Email: <a href="mailto:wellington03121999@gmail.com">wellington03121999@gmail.com</a></span>
+      </div>
+
+      <p class="tagline">
+        Detail-oriented linguistic evaluator and English language specialist with 20+ years of experience in Japan,
+        focusing on language assessment, text correction, proficiency scoring, and educational content review.
+      </p>
+
+      <p class="small">
+        Seeking flexible remote opportunities that complement my teaching schedule, with a long-term goal of transitioning
+        into remote roles in instruction, AI data evaluation, linguistic annotation, search relevance, or content quality review.
+      </p>
+
+      <div class="badge-row">
+        <span class="badge">Linguistic Evaluation</span>
+        <span class="badge">AI Data & Content Review</span>
+        <span class="badge">Remote-Friendly</span>
+        <span class="badge">Based in Japan</span>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE: PHOTO -->
+    <div style="flex: 0 0 180px; text-align: center; margin-top: 12px;">
+      <img src="autumn.jpg" alt="Paul Harris Photo" style="
+        max-width: 160px;
+	height: auto;
+	object-fit: contain;      /* crops nicely */
+        border-radius: 8px;
+        border: 2px solid #e5e7eb;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      ">
+    </div>
+
+    <!--
+    ================================================
+    PREVIOUS NAME PLATE (KEPT FOR REFERENCE ONLY)
+
+    <div style="flex: 0 0 180px; text-align: center; margin-top: 12px;">
+      <div style="
+        width: 160px;
+        height: 200px;
+        border-radius: 8px;
+        border: 2px solid #e5e7eb;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #374151;
+        font-size: 1.05rem;
+        font-weight: 600;
+      ">
+        Paul W. Harris
+      </div>
+    </div>
+    ================================================
+    -->
+
+  </div>
+</header>
+
+
+    <main>
+      <!-- LEFT COLUMN -->
+      <div>
+        <section id="experience">
+          <h2>Professional Experience</h2>
+
+          <div class="job">
+            <div class="job-header">
+              <div>
+                <div class="job-title">English Language Evaluator & Instructor</div>
+                <div class="small">Various Schools in Japan</div>
+              </div>
+              <div class="job-meta">1999 – Present</div>
+            </div>
+            <ul class="job-bullets">
+              <li>Conduct detailed linguistic evaluation of student writing and speaking across thousands of assessments.</li>
+              <li>Identify grammatical, lexical, and structural errors with high accuracy and consistency.</li>
+              <li>Provide written scoring and feedback aligned with standardized criteria (EIKEN / TOEIC preparation).</li>
+              <li>Design and review reading comprehension tasks, categorize vocabulary, and analyze learner responses.</li>
+              <li>Evaluate oral proficiency through listening, fluency judgment, tone assessment, and error classification.</li>
+              <li>Create digital worksheets, structured prompts, and controlled language tasks for learning.</li>
+              <li>Work independently to complete curriculum, scoring, and evaluation tasks under deadlines.</li>
+              <li>Communicate digitally with Japanese colleagues and administrators to coordinate tasks and share results.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <div>
+                <div class="job-title">English Instructor / ALT</div>
+                <div class="small">A to Z Language School – Ueda, Nagano</div>
+              </div>
+              <div class="job-meta">2018 – Present</div>
+            </div>
+            <ul class="job-bullets">
+              <li>Design structured lesson plans and performance-based speaking tasks.</li>
+              <li>Deliver detailed language correction for written and spoken assignments.</li>
+              <li>Support TOEIC/EIKEN exam preparation with practice scoring and structured evaluation.</li>
+              <li>Create and maintain digital materials and instructional content archives.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <div>
+                <div class="job-title">English Instructor / ALT</div>
+                <div class="small">Miyota Board of Education – Miyota, Nagano</div>
+              </div>
+              <div class="job-meta">2008 – 2018</div>
+            </div>
+            <ul class="job-bullets">
+              <li>Conduct ongoing error detection and English proficiency scoring across grade levels.</li>
+              <li>Write monthly educational articles requiring clarity, coherence, and accuracy.</li>
+              <li>Assess learner performance through structured rubrics and teacher collaboration.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <div>
+                <div class="job-title">English Instructor / ALT</div>
+                <div class="small">A to Z Language School – Komoro/Okaya, Nagano</div>
+              </div>
+              <div class="job-meta">2001 – 2008</div>
+            </div>
+            <ul class="job-bullets">
+              <li>Evaluate student responses for accuracy, clarity, and appropriateness.</li>
+              <li>Conduct structured corrections of grammar, tone, and expression.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <div>
+                <div class="job-title">English Instructor</div>
+                <div class="small">NOVA Intercultural Institute – Shiki, Saitama</div>
+              </div>
+              <div class="job-meta">1999 – 2001</div>
+            </div>
+            <ul class="job-bullets">
+              <li>Teach adult and children’s classes, providing focused language evaluation and feedback.</li>
+              <li>Deliver EIKEN/TOEIC-style practice and assess learner performance.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="education">
+          <h2>Education</h2>
+          <div class="edu-entry">
+            <strong>Bachelor of Arts in Communication</strong>
+            North Carolina State University, 1998
+          </div>
+        </section>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div>
+        <section id="summary">
+          <h2>Profile</h2>
+          <p class="section-intro">
+            Experienced English instructor and linguistic evaluator with a strong record of high-quality assessment work
+            in Japanese educational environments. Comfortable working in structured, task-based workflows and adapting
+            to remote, guideline-driven evaluation projects.
+          </p>
+        </section>
+
+        <section id="skills">
+          <h2>Core Competencies</h2>
+
+          <div class="subheading">Linguistic & Evaluation</div>
+          <ul class="pill-list">
+            <li>Linguistic evaluation & text quality judgment</li>
+            <li>Grammar/error detection & correction</li>
+            <li>Reading comprehension & text categorization</li>
+            <li>Standardized test scoring (EIKEN/TOEIC prep support)</li>
+            <li>Voice/conversation assessment & fluency scoring</li>
+          </ul>
+
+          <div class="subheading">AI / Data-Relevant Skills</div>
+          <ul class="pill-list">
+            <li>Search-relevance style evaluation (language focused)</li>
+            <li>Content quality review</li>
+            <li>Task-based workflow management</li>
+          </ul>
+
+          <div class="subheading">Communication & Tools</div>
+          <ul class="pill-list">
+            <li>Cross-cultural communication (Japan–English)</li>
+            <li>Conversational Japanese (JLPT N3)</li>
+            <li>Zoom, Google Classroom, Google Docs, Teams</li>
+          </ul>
+        </section>
+
+        <section id="additional">
+          <h2>Additional Information</h2>
+          <ul class="job-bullets">
+            <li>Permanent Resident of Japan.</li>
+            <li>Japanese Driver’s License holder.</li>
+            <li>First Aid / CPR certified.</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
